@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        console.log("Write a JavaScript program to check whether it is possible to rearrange characters of a given string in such way that it will become equal to another given string.");
+        function rearrangement_characters(str1, str2) {
+
+            var first_set = str1.split(''),
+                second_set = str2.split(''),
+                result = true;
+
+            first_set.sort();
+            second_set.sort();
+
+            for (var i = 0; i < Math.max(first_set.length, second_set.length); i++) {
+                if (first_set[i] !== second_set[i]) {
+                    result = false;
+                }
+            }
+
+            return result;
+        }
+
+        console.log(rearrangement_characters("xyz", "zyx"))
+        console.log(rearrangement_characters("xyz", "zyp"))
+
+    </script>
+</body>
+
+</html>
