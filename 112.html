@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("Write a JavaScript program to find the number of trailing zeros in the decimal representation of the factorial of a given number.");
+        function trailing_zeros_factorial(n) {
+            var result = 0;
+            for (var i = 5; i <= n; i += 5) {
+                var num = i;
+                while (num % 5 === 0) {
+                    num /= 5;
+                    result++;
+                }
+            }
+            return result;
+        }
+
+        console.log(trailing_zeros_factorial(8))
+        console.log(trailing_zeros_factorial(9))
+        console.log(trailing_zeros_factorial(10))
+
+    </script>
+</body>
+
+</html>
