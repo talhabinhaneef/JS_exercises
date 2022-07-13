@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function round_number(input_arr) {
+            var result = 0;
+            input_arr.forEach(i => {
+                if (i % 10 === 0) {
+                    result = i;
+                }
+            });
+            return result;
+        }
+
+        console.log(round_number([11, 22, 30, 59, 56]));
+        console.log(round_number([11, 22, 32, 20, 56]));
+        console.log(round_number([11, 22, 32, 54, 50]));
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("Write a JavaScript program to compute the sum of all digits that occur in a given string. ");
+        function sum_digits_from_string(dstr) {
+            var dsum = 0;
+
+            for (var i = 0; i < dstr.length; i++) {
+
+                if (/[0-9]/.test(dstr[i])) dsum += parseInt(dstr[i])
+            }
+            return dsum;
+        }
+
+        console.log(sum_digits_from_string("abcd12efg9"))
+        console.log(sum_digits_from_string("w3resource"))
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+<script>
+
+    today = new Date();
+    var ind = new Date(today.getFullYear(), 7, 14);
+    if (today.getMonth() == 7 && today.getDate() > 14) {
+        ind.setFullYear(ind.getFullYear() + 1);
+    }
+    var one_day = 1000 * 60 * 60 * 24;
+
+    console.log(Math.ceil((ind.getTime() - today.getTime()) / (one_day)) +
+        " days left until  Next Pakistan Independance Day!");
+
+</script>
+</body>
+</html>

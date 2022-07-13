@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        console.log("Check whether a given fraction is proper or not");
+
+        function proper_improper_test(num) {
+            return Math.abs(num[0] / num[1]) < 1
+                ? "Proper fraction."
+                : "Improper fraction.";
+        }
+        console.log(proper_improper_test([12, 300]));
+        console.log(proper_improper_test([2, 4]));
+        console.log(proper_improper_test([103, 3]));
+        console.log(proper_improper_test([104, 2]));
+        console.log(proper_improper_test([5, 40]));
+
+    </script>
+</body>
+
+</html>

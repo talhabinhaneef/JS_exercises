@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("");
+
+        function remove_duplicate_cchars(str) {
+            var arr_char = str.split("");
+            var result_arr = [];
+
+            for (var i = 0; i < arr_char.length; i++) {
+                if (str.indexOf(arr_char[i]) === str.lastIndexOf(arr_char[i]))
+                    result_arr.push(arr_char[i]);
+            }
+
+            return result_arr.join("");
+        }
+        console.log(remove_duplicate_cchars("abcdabc"));
+        console.log(remove_duplicate_cchars("python"));
+        console.log(remove_duplicate_cchars("abcabc"));
+        console.log(remove_duplicate_cchars("1365451"));
+        console.log(remove_duplicate_cchars("talha"));
+
+
+
+
+    </script>
+</body>
+
+</html>
